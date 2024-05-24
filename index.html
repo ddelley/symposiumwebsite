@@ -1,10 +1,520 @@
+
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="tt.css">
+    <link rel="stylesheet" href="visuals.css">
+    <script type="text/javascript" src="tt.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@lemaik/qrcode-svg@1.2.0/dist/qrcode.min.js" defer></script>
+    <title>XVII IMPRS Symposium schedule</title>
+  </head>
+  <body>
+  <div id="tt-actions"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" display="none"><symbol width="24" id="qr" viewBox="0 0 189 189" height="24"><path d="m0 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-180 9h9v9h-9zm54 0h9v9h-9zm45 0h9v9h-9zm27 0h9v9h-9zm54 0h9v9h-9zm-180 9h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm45 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm-180 9h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm-180 9h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm-180 9h9v9h-9zm54 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm54 0h9v9h-9zm-180 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-99 9h9v9h-9zm27 0h9v9h-9zm-99 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm54 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm-180 9h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm45 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm-171 9h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm27 0h9v9h-9zm-162 9h9v9h-9zm18 0h9v9h-9zm54 0h9v9h-9zm9 0h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm-162 9h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm18 0h9v9h-9zm-90 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm18 0h9v9h-9zm-171 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm-171 9h9v9h-9zm54 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm36 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm27 0h9v9h-9zm-180 9h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm27 0h9v9h-9zm27 0h9v9h-9zm-162 9h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm27 0h9v9h-9zm-162 9h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm-162 9h9v9h-9zm54 0h9v9h-9zm18 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm45 0h9v9h-9zm9 0h9v9h-9zm18 0h9v9h-9zm-162 9h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm45 0h9v9h-9zm18 0h9v9h-9zm27 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9zm9 0h9v9h-9z" fill="#0c0c0d" stroke="transparent" />
+</symbol><symbol width="24" id="arrow" viewBox="0 0 67.551 58.524" height="24"><g>
+  <path d="m7.531 56.144c-0.1-20.298-6.082-46.19 47.928-45.402" />
+  <path d="m20.724 56.21c-0.011-15.933-6.503-33.854 34.33-32.181" />
+  <path d="m45.888 1.83c9.57 8.912 9.57 8.912 17.659 15.203-8.493 6.995-8.493 6.995-18.758 15.565" />
+  <path d="m0.013 56.025 27.456-0.185" />
+ </g>
+</symbol></svg>
+  <div id="modal">
+    <div id="modal-content">
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="schedule">
+      <span class="time-slot" style="grid-row: time-0920;">09:20</span>
+      <span class="time-rule" style="grid-row: time-0920;"></span>
+      <span class="time-slot" style="grid-row: time-0930;">09:30</span>
+      <span class="time-rule" style="grid-row: time-0930;"></span>
+      <span class="time-slot" style="grid-row: time-0940;">09:40</span>
+      <span class="time-rule" style="grid-row: time-0940;"></span>
+      <span class="time-slot" style="grid-row: time-0950;">09:50</span>
+      <span class="time-rule" style="grid-row: time-0950;"></span>
+      <span class="time-slot" style="grid-row: time-1000;">10:00</span>
+      <span class="time-rule" style="grid-row: time-1000;"></span>
+      <span class="time-slot" style="grid-row: time-1010;">10:10</span>
+      <span class="time-rule" style="grid-row: time-1010;"></span>
+      <span class="time-slot" style="grid-row: time-1020;">10:20</span>
+      <span class="time-rule" style="grid-row: time-1020;"></span>
+      <span class="time-slot" style="grid-row: time-1030;">10:30</span>
+      <span class="time-rule" style="grid-row: time-1030;"></span>
+      <span class="time-slot" style="grid-row: time-1040;">10:40</span>
+      <span class="time-rule" style="grid-row: time-1040;"></span>
+      <span class="time-slot" style="grid-row: time-1050;">10:50</span>
+      <span class="time-rule" style="grid-row: time-1050;"></span>
+      <span class="time-slot" style="grid-row: time-1100;">11:00</span>
+      <span class="time-rule" style="grid-row: time-1100;"></span>
+      <span class="time-slot" style="grid-row: time-1110;">11:10</span>
+      <span class="time-rule" style="grid-row: time-1110;"></span>
+      <span class="time-slot" style="grid-row: time-1120;">11:20</span>
+      <span class="time-rule" style="grid-row: time-1120;"></span>
+      <span class="time-slot" style="grid-row: time-1130;">11:30</span>
+      <span class="time-rule" style="grid-row: time-1130;"></span>
+      <span class="time-slot" style="grid-row: time-1140;">11:40</span>
+      <span class="time-rule" style="grid-row: time-1140;"></span>
+      <span class="time-slot" style="grid-row: time-1150;">11:50</span>
+      <span class="time-rule" style="grid-row: time-1150;"></span>
+      <span class="time-slot" style="grid-row: time-1200;">12:00</span>
+      <span class="time-rule" style="grid-row: time-1200;"></span>
+      <span class="time-slot" style="grid-row: time-1210;">12:10</span>
+      <span class="time-rule" style="grid-row: time-1210;"></span>
+      <span class="time-slot" style="grid-row: time-1220;">12:20</span>
+      <span class="time-rule" style="grid-row: time-1220;"></span>
+      <span class="time-slot" style="grid-row: time-1230;">12:30</span>
+      <span class="time-rule" style="grid-row: time-1230;"></span>
+      <span class="time-slot" style="grid-row: time-1240;">12:40</span>
+      <span class="time-rule" style="grid-row: time-1240;"></span>
+      <span class="time-slot" style="grid-row: time-1250;">12:50</span>
+      <span class="time-rule" style="grid-row: time-1250;"></span>
+      <span class="time-slot" style="grid-row: time-1300;">13:00</span>
+      <span class="time-rule" style="grid-row: time-1300;"></span>
+      <span class="time-slot" style="grid-row: time-1310;">13:10</span>
+      <span class="time-rule" style="grid-row: time-1310;"></span>
+      <span class="time-slot" style="grid-row: time-1320;">13:20</span>
+      <span class="time-rule" style="grid-row: time-1320;"></span>
+      <span class="time-slot" style="grid-row: time-1330;">13:30</span>
+      <span class="time-rule" style="grid-row: time-1330;"></span>
+      <span class="time-slot" style="grid-row: time-1340;">13:40</span>
+      <span class="time-rule" style="grid-row: time-1340;"></span>
+      <span class="time-slot" style="grid-row: time-1350;">13:50</span>
+      <span class="time-rule" style="grid-row: time-1350;"></span>
+      <span class="time-slot" style="grid-row: time-1400;">14:00</span>
+      <span class="time-rule" style="grid-row: time-1400;"></span>
+      <span class="time-slot" style="grid-row: time-1410;">14:10</span>
+      <span class="time-rule" style="grid-row: time-1410;"></span>
+      <span class="time-slot" style="grid-row: time-1420;">14:20</span>
+      <span class="time-rule" style="grid-row: time-1420;"></span>
+      <span class="time-slot" style="grid-row: time-1430;">14:30</span>
+      <span class="time-rule" style="grid-row: time-1430;"></span>
+      <span class="time-slot" style="grid-row: time-1440;">14:40</span>
+      <span class="time-rule" style="grid-row: time-1440;"></span>
+      <span class="time-slot" style="grid-row: time-1450;">14:50</span>
+      <span class="time-rule" style="grid-row: time-1450;"></span>
+      <span class="time-slot" style="grid-row: time-1500;">15:00</span>
+      <span class="time-rule" style="grid-row: time-1500;"></span>
+      <span class="time-slot" style="grid-row: time-1510;">15:10</span>
+      <span class="time-rule" style="grid-row: time-1510;"></span>
+      <span class="time-slot" style="grid-row: time-1520;">15:20</span>
+      <span class="time-rule" style="grid-row: time-1520;"></span>
+      <span class="time-slot" style="grid-row: time-1530;">15:30</span>
+      <span class="time-rule" style="grid-row: time-1530;"></span>
+      <span class="time-slot" style="grid-row: time-1540;">15:40</span>
+      <span class="time-rule" style="grid-row: time-1540;"></span>
+      <span class="time-slot" style="grid-row: time-1550;">15:50</span>
+      <span class="time-rule" style="grid-row: time-1550;"></span>
+      <span class="time-slot" style="grid-row: time-1600;">16:00</span>
+      <span class="time-rule" style="grid-row: time-1600;"></span>
+      <span class="time-slot" style="grid-row: time-1610;">16:10</span>
+      <span class="time-rule" style="grid-row: time-1610;"></span>
+      <span class="time-slot" style="grid-row: time-1620;">16:20</span>
+      <span class="time-rule" style="grid-row: time-1620;"></span>
+      <span class="time-slot" style="grid-row: time-1630;">16:30</span>
+      <span class="time-rule" style="grid-row: time-1630;"></span>
+      <span class="time-slot" style="grid-row: time-1640;">16:40</span>
+      <span class="time-rule" style="grid-row: time-1640;"></span>
+      <span class="time-slot" style="grid-row: time-1650;">16:50</span>
+      <span class="time-rule" style="grid-row: time-1650;"></span>
+      <span class="time-slot" style="grid-row: time-1700;">17:00</span>
+      <span class="time-rule" style="grid-row: time-1700;"></span>
+      <span class="time-slot" style="grid-row: time-1710;">17:10</span>
+      <span class="time-rule" style="grid-row: time-1710;"></span>
+      <span class="time-slot" style="grid-row: time-1720;">17:20</span>
+      <span class="time-rule" style="grid-row: time-1720;"></span>
+      <span class="time-slot" style="grid-row: time-1730;">17:30</span>
+      <span class="time-rule" style="grid-row: time-1730;"></span>
+      <span class="time-slot" style="grid-row: time-1740;">17:40</span>
+      <span class="time-rule" style="grid-row: time-1740;"></span>
+      <span class="time-slot" style="grid-row: time-1750;">17:50</span>
+      <span class="time-rule" style="grid-row: time-1750;"></span>
+      <span class="time-slot" style="grid-row: time-1800;">18:00</span>
+      <span class="time-rule" style="grid-row: time-1800;"></span>
+      <span class="time-slot" style="grid-row: time-1801;">18:01</span>
+      <span class="time-rule" style="grid-row: time-1801;"></span>
+      
+      <div class="conference-location-info">
+          <a class="conference-location-place" 
+             href="https://osmand.net/map/?pin=48.260062,11.671043#17/48.260062/11.671043">
+             Big Seminar Room @ MPA, Garching, Germany
+          </a>
+      </div>
+      
+      <div id="days-links-list">
+        <div class="link-day" id="link-day-0" href="#day-0" style="grid-column: day-0">
+          <span class="link-day-label-date">06.06.2024</span>
+          <span class="link-day-label-weekday">Thu</span>
+        </div>
+      </div>
+
+      <div class="conference-anyday" id="conference-day-0" style="grid-column: day-0" data-date="2024-06-06">
+        
+<div class="conference-session" 
+title="High Energy Astrophysics&#10;(Chair: TBD)" 
+style="grid-column: 1 / -1; grid-row: time-1430 / time-1730"></div>
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1430 / time-1500;" id="t1">
+    <div class="talk-details">
+    <h3 class="talk-title">Overview talk</h3>
+    <span class="talk-coauthors">Efrain Gatuzz</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1500 / time-1520;" id="t2">
+    <div class="talk-details">
+    <h3 class="talk-title">eROSITA narrowband maps at the energies of soft X-ray emission lines</h3>
+    <span class="talk-coauthors">Xueying Zheng</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1520 / time-1540;" id="t3">
+    <div class="talk-details">
+    <h3 class="talk-title">eROSITA narrowband maps at the energies of soft X-ray emission lines</h3>
+    <span class="talk-coauthors">Iuliia Grotova</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1540 / time-1600;" id="t4">
+    <div class="talk-details">
+    <h3 class="talk-title">Breakdown of Hawking Evaporation opens New Mass Window for Primordial Black Holes as Dark Matter</h3>
+    <span class="talk-coauthors">Valentin Thoss</span>
+    </div>
+    </div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1600 / time-1630;">
+    <div class="event-details">
+    <h3 class="event-name">Coffee break</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1630 / time-1650;" id="t5">
+    <div class="talk-details">
+    <h3 class="talk-title">Characterizing galaxy clusters in the eRASS1 X-ray point source catalog</h3>
+    <span class="talk-coauthors">Fabian Balzer</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1650 / time-1710;" id="t6">
+    <div class="talk-details">
+    <h3 class="talk-title"> G321.3–3.9: a new supernova remnant observed with multi-band radio data and in the SRG/eROSITA All-Sky Surveys</h3>
+    <span class="talk-coauthors">Alena Khokhriakova</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1710 / time-1730;" id="t7">
+    <div class="talk-details">
+    <h3 class="talk-title">Observations and simulations of the forming intraclustermedium</h3>
+    <span class="talk-coauthors">Joshiwa van Marrewijk</span>
+    </div>
+    </div>
+
+
+        
+<div class="conference-session" 
+title="Galaxy Formation and Evolution&#10;(Chair: TBD)" 
+style="grid-column: 1 / -1; grid-row: time-0920 / time-1300"></div>
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-0920 / time-0930;" id="t8">
+    <div class="talk-details">
+    <h3 class="talk-title">Opening</h3>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-0930 / time-1000;" id="t9">
+    <div class="talk-details">
+    <h3 class="talk-title">Overview talk: </h3>
+    <span class="talk-coauthors">Amelia Fraser-McKelvie</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1000 / time-1020;" id="t10">
+    <div class="talk-details">
+    <h3 class="talk-title">L-Galaxies: Debugging galaxy evolution across cosmic epochs through galaxy scaling relations</h3>
+    <span class="talk-coauthors">Akash Vani</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1020 / time-1040;" id="t11">
+    <div class="talk-details">
+    <h3 class="talk-title">Modelling the hot CGM of Milky-Way like galaxies</h3>
+    <span class="talk-coauthors">Soumya Shreeram</span>
+    </div>
+    </div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1040 / time-1100;">
+    <div class="event-details">
+    <h3 class="event-name">Coffee break</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1100 / time-1120;" id="t12">
+    <div class="talk-details">
+    <h3 class="talk-title">The eROSITA All Sky Survey: X-ray emission around galaxies</h3>
+    <span class="talk-coauthors">Yi Zhang</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1120 / time-1140;" id="t13">
+    <div class="talk-details">
+    <h3 class="talk-title">Crossing windows and walls with Lyman-alpha</h3>
+    <span class="talk-coauthors">Silvia Almada Monter</span>
+    </div>
+    </div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1140 / time-1200;">
+    <div class="event-details">
+    <h3 class="event-name">Coffee break</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1200 / time-1220;" id="t14">
+    <div class="talk-details">
+    <h3 class="talk-title">[CII] emission in the first galaxies</h3>
+    <span class="talk-coauthors">Benedetta Casavecchia</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1220 / time-1240;" id="t15">
+    <div class="talk-details">
+    <h3 class="talk-title">ALMACAL: Untargeted CO Emission Line Survey</h3>
+    <span class="talk-coauthors">Victoria Bollo</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1240 / time-1300;" id="t16">
+    <div class="talk-details">
+    <h3 class="talk-title">Simulating Multiphase Gas, its challenges and their solutions</h3>
+    <span class="talk-coauthors">Hitesh Kishore Das</span>
+    </div>
+    </div>
+
+
+        
+<div class="conference-session" 
+style="grid-column: 1 / -1; grid-row: time-1300 / time-1430"></div>
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1300 / time-1430;">
+    <div class="event-details">
+    <h3 class="event-name">Lunch break: IMPRS Lunch</h3>
+    </div>
+	</div>
+
+
+      
+        <span class="current-time-rule"></span>
+      </div>
+      <div id="days-links-list">
+        <div class="link-day" id="link-day-1" href="#day-1" style="grid-column: day-1">
+          <span class="link-day-label-date">07.06.2024</span>
+          <span class="link-day-label-weekday">Fri</span>
+        </div>
+      </div>
+
+      <div class="conference-anyday" id="conference-day-1" style="grid-column: day-1" data-date="2024-06-07">
+        
+<div class="conference-session" 
+title="Black Holes and Cosmology&#10;(Chair: TBD)" 
+style="grid-column: 1 / -1; grid-row: time-0930 / time-1240"></div>
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-0930 / time-1000;" id="t17">
+    <div class="talk-details">
+    <h3 class="talk-title">Overview talk</h3>
+    <span class="talk-coauthors">Julia Stadler</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1000 / time-1020;" id="t18">
+    <div class="talk-details">
+    <h3 class="talk-title">Image reconstruction of the Galactic Center of GRAVITY data with Bayesian Inference</h3>
+    <span class="talk-coauthors">Felix Mang</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1020 / time-1040;" id="t19">
+    <div class="talk-details">
+    <h3 class="talk-title">Spectroscopic AGN Survey with NTT/SOFI for GRAVITY+ Observations</h3>
+    <span class="talk-coauthors">Daryl Joe Santos</span>
+    </div>
+    </div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1040 / time-1100;">
+    <div class="event-details">
+    <h3 class="event-name">Coffee break</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1100 / time-1120;" id="t20">
+    <div class="talk-details">
+    <h3 class="talk-title">Generative models for Bayesian inference in cosmology</h3>
+    <span class="talk-coauthors">Jed Homer</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1120 / time-1140;" id="t21">
+    <div class="talk-details">
+    <h3 class="talk-title">Using galaxy clusters to constrain baryon impact on the matter power spectrum</h3>
+    <span class="talk-coauthors">Aditya Singh</span>
+    </div>
+    </div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1140 / time-1200;">
+    <div class="event-details">
+    <h3 class="event-name">Coffee break</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1200 / time-1220;" id="t22">
+    <div class="talk-details">
+    <h3 class="talk-title">Simulation-based inference for galaxy clustering</h3>
+    <span class="talk-coauthors">Beatriz Tucci Schiewaldt</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1220 / time-1240;" id="t23">
+    <div class="talk-details">
+    <h3 class="talk-title">Probing cosmology with kinetic Sunyaev–Zeldovich effect with DESI spectrosopy</h3>
+    <span class="talk-coauthors">Yun-Hsin Hsu</span>
+    </div>
+    </div>
+
+
+        
+<div class="conference-session" 
+title="Star and Planet Fromation + Other&#10;(Chair: TBD)" 
+style="grid-column: 1 / -1; grid-row: time-1400 / time-1801"></div>
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1400 / time-1430;" id="t24">
+    <div class="talk-details">
+    <h3 class="talk-title">Overview talk</h3>
+    <span class="talk-coauthors">Marta De Simone</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1430 / time-1450;" id="t25">
+    <div class="talk-details">
+    <h3 class="talk-title">Dust Dynamics in Hydrodynamical simulations: SPH and MFM</h3>
+    <span class="talk-coauthors">Giovanni Tedeschi Prades</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1450 / time-1510;" id="t26">
+    <div class="talk-details">
+    <h3 class="talk-title">Sequential giant planet formation initiated by disc substructure</h3>
+    <span class="talk-coauthors">Tommy Chi Ho Lau</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1510 / time-1530;" id="t27">
+    <div class="talk-details">
+    <h3 class="talk-title">Modelling deuterated isotopologues of methanol</h3>
+    <span class="talk-coauthors">Wiebke Riedel</span>
+    </div>
+    </div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1530 / time-1600;">
+    <div class="event-details">
+    <h3 class="event-name">Coffee break</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1600 / time-1620;" id="t28">
+    <div class="talk-details">
+    <h3 class="talk-title">Implementing Polarization Treatment in Monte Carlo Radiative Transfer Codes for Cosmic Dust</h3>
+    <span class="talk-coauthors">Thomas Vannieuwenhuyse</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1620 / time-1640;" id="t29">
+    <div class="talk-details">
+    <h3 class="talk-title">Unveiling the role of magnetic fields in an accreting filament</h3>
+    <span class="talk-coauthors">Farideh Tabatabaei</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1640 / time-1700;" id="t30">
+    <div class="talk-details">
+    <h3 class="talk-title">Discrimination and power dynamics in academia</h3>
+    <span class="talk-coauthors">Matteo Esposito</span>
+    </div>
+    </div>
+
+      
+  <div class="talk" style="grid-column: 1 / -1;grid-row: time-1700 / time-1710;" id="t31">
+    <div class="talk-details">
+    <h3 class="talk-title">Concluding remarks and announcements</h3>
+    </div>
+    </div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1710 / time-1800;">
+    <div class="event-details">
+    <h3 class="event-name"></h3>
+    </div>
+	</div>
+
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1800 / time-1801;">
+    <div class="event-details">
+    <h3 class="event-name">Party</h3>
+    </div>
+	</div>
+
+
+        
+<div class="conference-session" 
+style="grid-column: 1 / -1; grid-row: time-1300 / time-1400"></div>
+      
+  <div class="event" style="grid-column: 1 / -1;grid-row: time-1300 / time-1400;">
+    <div class="event-details">
+    <h3 class="event-name">Lunch break</h3>
+    </div>
+	</div>
+
+
+      
+        <span class="current-time-rule"></span>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <p>
+    Something missing? Email <a href="mailto:tikhonenko@mpe.mpg.de">tikhonenko@mpe.mpg.de</a>
+  </p>
+</footer>
 </html>
